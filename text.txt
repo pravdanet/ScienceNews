@@ -6,7 +6,7 @@ json
 rss
 bash (1/5)
 SQL (2/5)
-SQLLite (1/5)
+SQLite (1/5)
 Firebird (1/5)
 telegram bot
 git
