@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./news.db:/app/news.db
+      - ./.env:/app/.env
+    environment:
+      - TZ=Europe/Moscow  # Установите вашу временную зону
+
+volumes:
+  db_data:

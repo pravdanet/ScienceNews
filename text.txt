@@ -10,3 +10,4 @@ SQLite (1/5)
 Firebird (1/5)
 telegram bot
 git
+deepseak (2/5)
