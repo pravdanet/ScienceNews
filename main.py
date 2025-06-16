@@ -148,7 +148,7 @@ def check_all_feeds():
 def scheduled_check(hours=1):
     check_all_feeds()
     # Устанавливаем таймер на следующий запуск
-    Timer(hours * 3600, scheduled_check, [hours]).start()
+    Timer(hours * 10, scheduled_check, [hours]).start()
 
 if __name__ == "__main__":
     init_db()
@@ -157,3 +157,6 @@ if __name__ == "__main__":
     check_all_feeds()
     # Затем каждый час
     scheduled_check()
+
+    while True:
+        time.sleep(1)

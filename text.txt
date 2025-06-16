@@ -1,13 +1,23 @@
+Операционные системы и инструменты
 macOS
-VScode
-Python (2/5)
-openAI API (1/5)
-json
-rss
 bash (1/5)
+git
+VScode
+docker (1/5)
+
+Языки программирования и базы данных
+Python (2/5)
 SQL (2/5)
 SQLite (1/5)
 Firebird (1/5)
-telegram bot
-git
-deepseak (2/5)
+
+API и фреймворки
+OpenAI API (1/5)
+Telegram bot
+
+Форматы данных
+JSON
+RSS
+
+Прочие технологии
+DeepSeek (2/5)
