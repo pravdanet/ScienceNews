@@ -12,6 +12,7 @@ import json
 import re
 from telegram import Bot
 import asyncio
+from apscheduler.schedulers.blocking import BlockingScheduler
 
 # Загрузка переменных из .env
 load_dotenv()
@@ -144,11 +145,11 @@ def check_all_feeds():
     for feed in feeds:
         fetch_news(feed['url'], feed['name'])
 
-# Функция для периодической проверки
-def scheduled_check(hours=1):
+scheduler = BlockingScheduler()
+
+@scheduler.scheduled_job('interval', hours=1)
+def scheduled_job():
     check_all_feeds()
-    # Устанавливаем таймер на следующий запуск
-    Timer(hours * 3600, scheduled_check, [hours]).start()
 
 if __name__ == "__main__":
     init_db()
@@ -156,7 +157,4 @@ if __name__ == "__main__":
     # Первый запуск сразу
     check_all_feeds()
     # Затем каждый час
-    scheduled_check()
-
-    while True:
-        time.sleep(1)
+    scheduler.start()
