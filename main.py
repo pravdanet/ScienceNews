@@ -110,7 +110,8 @@ async def send_message(text, link):
     bot = Bot(token=TOKEN)
     await bot.send_message(
         chat_id=CHANNEL_ID,
-        text=f"{text} {link}"
+        text=f"{text}\n\n<a href='{link}'>Читать подробнее</a>",
+        parse_mode="HTML"
     )
 
 # Получение новостей из RSS-канала
@@ -139,7 +140,8 @@ def check_all_feeds():
     # Список RSS-каналов (можно расширить)
     feeds = [
         {'url': 'https://nplus1.ru/rss', 'name': 'N+1'},
-        {'url': 'https://www.sciencenews.org/feed', 'name': 'Science News'}
+        {'url': 'https://www.sciencenews.org/feed', 'name': 'Science News'},
+        {'url': 'https://www.science.org/rss/news_current.xml', 'name': 'Science'}
     ]
     
     for feed in feeds:
