@@ -24,10 +24,6 @@ A Dockerized Telegram bot that fetches science news articles, summarizes and tra
     ```bash
     pip install -r requirements.txt
     ```
-or 
-    ```bash
-    pip3 install -r requirements.txt
-    ```
 
 ## Configuration
 1. Copy or rename `.env.example` to `.env`:
@@ -69,10 +65,6 @@ Required environment variables (set in `.env`):
 ## Manual Execution
     ```bash
     python main.py
-    ```
-or
-    ```bash
-    python3 main.py
     ```
 
 ## Usage
