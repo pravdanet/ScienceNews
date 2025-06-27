@@ -31,7 +31,8 @@ A Dockerized Telegram bot that fetches science news articles, summarizes and tra
     cp .env.example .env
     ```
 2. Edit the `.env` file with your credentials:
-    ```TELEGRAM_TOKEN=your_tg_bot_token
+    ```
+    TELEGRAM_TOKEN=your_tg_bot_token
     OPENAI_KEY=your_openai_api_key
     CHANNEL_ID=@your_tg_channel
     ```
@@ -63,8 +64,7 @@ Required environment variables (set in `.env`):
     ```
 
 ## Manual Execution
-    ```bash
-    python main.py
+    ```bash python main.py
     ```
 
 ## Usage
