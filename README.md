@@ -13,10 +13,10 @@ A Dockerized Telegram bot that fetches science news articles, summarizes and tra
 ## Installation
 
 ### Configuration
-Required environment variables (set in '.env'):
-* 'TELEGRAM_TOKEN': Your Telegram bot token from @BotFather
-* 'OPENAI_KEY': API key for OpenAI services
-* 'TELEGRAM_CHANNEL_ID': Target channel username (e.g., @sc1ence_news)
+Required environment variables (set in `.env`):
+* `TELEGRAM_TOKEN`: Your Telegram bot token from @BotFather
+* `OPENAI_KEY`: API key for OpenAI services
+* `TELEGRAM_CHANNEL_ID`: Target channel username (e.g., @sc1ence_news)
 
 ### Setup
 1. Clone the repository:
